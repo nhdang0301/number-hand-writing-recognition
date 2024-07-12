@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digit Recognition</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="container">
+        <h1>Digit Recognition</h1>
+        <canvas id="canvas" width="280" height="280"></canvas>
+        <div class="toolbar">
+          <button onclick="clearCanvas()">Clear</button>
+          <button onclick="predict()">Predict</button>
+          <input
+            type="file"
+            id="upload"
+            accept="image/*"
+            multiple
+            onchange="uploadImages()"
+          />
+        </div>
+        <div id="single-result" class="result" style="display: none"></div>
+      </div>
+      <div
+        class="side-container"
+        id="image-container"
+        style="display: none"
+      ></div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>

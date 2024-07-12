@@ -1,0 +1,130 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.main-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.side-container {
+  margin-left: 20px;
+  width: 300px;
+  overflow-y: auto;
+  max-height: 80vh;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.side-container img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+}
+
+.container {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+canvas {
+  border: 2px solid #007bff;
+  background-color: #000;
+  cursor: crosshair;
+  border-radius: 10px;
+}
+
+.toolbar {
+  margin-top: 20px;
+}
+
+button,
+input[type="file"] {
+  padding: 10px 20px;
+  font-size: 1em;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+input[type="file"] {
+  background-color: #f0f0f0;
+}
+
+.result {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: 2px solid #0056b3;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.result-container {
+  margin-top: 20px;
+}
+
+.result-item {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #28a745;
+  border: 2px solid #1e7e34;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.image-item {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.delete-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: transparent;
+  color: red;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 20px;
+}
