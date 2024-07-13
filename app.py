@@ -6,7 +6,6 @@ import numpy as np
 import io
 import base64
 import cv2
-
 app = Flask(__name__)
 model = load_model('my_model.h5')  # Đường dẫn tới mô hình đã lưu
 
